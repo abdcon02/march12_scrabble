@@ -43,6 +43,32 @@
             //Assert
             $this->assertEquals(2, $result);
         }
+
+        function test_scoreWord_1letter2Points()
+        {
+            //Arrange
+            $test_Scrabble = new Word;
+            $input1 = "d";
+
+            //Act
+            $result = $test_Scrabble->scoreWord($input1);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+
+        function test_scoreWord_2letter3Points()
+        {
+            //Arrange
+            $test_Scrabble = new Word;
+            $input1 = "ad";
+
+            //Act
+            $result = $test_Scrabble->scoreWord($input1);
+
+            //Assert
+            $this->assertEquals(3, $result);
+        }
     }
 
 ?>
