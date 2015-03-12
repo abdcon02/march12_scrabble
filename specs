@@ -1,11 +1,31 @@
-spec1
-return a value for a one letter input
-for input 'a' return a score of 1
+Specs:
 
-spec2
-return a value for an input of two letters with the same score
-for input of 'at' return a score of 2
+Test1-
+    Input the letter "a" worth 1 point.
+    Output score is 1 point.
+        example: a = 1
 
-spec3
-return a value for an input of two letters with different scores
-for input of 'ad' return a score of 3 
+Test2-
+    Input any letter worth 1 point.
+    Output score is 1 point.
+        example: t = 1
+
+Test3-
+    Input 2 letters worth 1 point each.
+    Output score is 2 points.
+        example: at = 2
+
+Test4-
+    Input any letter worth 2 points.
+    Output score is 2 points.
+        example: d = 2
+
+Test5-
+    Input any word worth 3 points.
+    Output score is 3 points.
+        example: ad = 3
+
+Test6-
+    Input any word worth multiple points.
+    Output score is the sum of letter values.
+        example: bad = 6

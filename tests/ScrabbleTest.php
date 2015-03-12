@@ -69,18 +69,20 @@
             //Assert
             $this->assertEquals(3, $result);
         }
+
         function test_scoreWord_multipleLettersMultiplePoints()
         {
             //Arrange
             $test_Scrabble = new Word;
-            $input1 = "bad";
+            $input1 = "quiz";
 
             //Act
             $result = $test_Scrabble->scoreWord($input1);
 
             //Assert
-            $this->assertEquals(6, $result);
+            $this->assertEquals(22, $result);
         }
+
     }
 
 ?>
