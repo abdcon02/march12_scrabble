@@ -1,9 +1,9 @@
 <?php
     class Word
     {
-        function scoreWord()
+        function scoreWord($letters)
         {
-            
+
         }
     }
 
